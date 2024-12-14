@@ -1,0 +1,194 @@
+* {
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+} 
+
+.header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 99;
+}
+
+.logo {
+   margin-right: auto;
+   font-size: 32px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 700;
+}
+
+.navbar a {
+   font-size: 18px;
+   color: #fff;
+   text-decoration: none;
+   font-weight: 500;
+   margin-right: 40px;
+}
+
+.navbar .btnLogin-popup {
+   background: transparent;
+   border: none;
+   font-size: 19px;
+   color: #fff;
+   font-weight: 500;
+   cursor: pointer;
+}
+
+.section {
+   min-height: 100vh;
+   background: url('1.webp') no-repeat center center/cover;
+}
+
+.wrapper {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 450px;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.5);
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 40px;
+}
+
+.logreg-box .logreg-title {
+   text-align: center;
+   margin-bottom: 40px;
+   color: #fff;
+}
+
+
+.logreg-title h2 {
+   font-size: 32px;
+   color: #ffcc00; 
+}
+
+.input-box {
+   position: relative;
+   width: 100%;
+   margin: 30px 0;
+   border-bottom: 2px solid #fff;
+}
+
+.input-box input {
+   width: 100%;
+   background: transparent; 
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: #fff;
+   padding: 10px;
+}
+
+.input-box label {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+   font-size: 16px;
+   color: #fff;
+   pointer-events: none;
+   transition: 0.5s;
+}
+
+.input-box input:focus + label,
+.input-box input:not(:placeholder-shown) + label {
+   top: -10px;
+   font-size: 12px;
+}
+
+.input-box .icon {
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   font-size: 20px;
+   color: #fff;
+}
+
+.remember-forgot {
+   font-size: 14px;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+.remember-forgot label input {
+   accent-color: #fff;
+   margin-right: 3px;
+}
+
+.remember-forgot a {
+   color: #f0e68c; 
+   text-decoration: none;
+}
+
+.remember-forgot a:hover {
+   text-decoration: underline;
+}
+
+.logreg-box .btn {
+   width: 100%;
+   height: 45px;
+   background: #fff;
+   border: none;
+   border-radius: 40px;
+   cursor: pointer;
+   font-size: 16px;
+   color: #222;
+   font-weight: 600;
+   margin-bottom: 30px; 
+}
+
+.logreg-box .logreg-link {
+   font-size: 14.5px;
+   color: #fff; 
+   text-align: center;
+   font-weight: 500;
+   margin-top: 25px;
+}
+
+.logreg-link p a {
+   color: #f0e68c; 
+   text-decoration: none;
+   font-weight: 600;
+}
+
+.logreg-link p a:hover {
+   text-decoration: underline;
+}
+
+.media-option a {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 50px;
+   background: transparent;
+   border: 2px solid #fff;
+   border-radius: 40px;
+   color: #fff;
+   text-decoration: none;
+   margin: 10px 0;
+   transition: 0.5s;
+}
+
+.media-option a:hover {
+   background: rgba(255, 255, 255, 0.1);
+}
+
+.media-option i {
+   font-size: 22px;
+   margin-right: 8px;
+}
